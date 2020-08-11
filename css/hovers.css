@@ -1,0 +1,14 @@
+/*Button Hovers*/
+button:hover {
+    box-shadow: 5px 5px 8px rgb(22, 22, 22);
+}
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgb(202, 103, 22);
+    color: white;
+}
+/* Change the active link color on hover*/
+.active:hover {
+    background-color: rgb(156, 65, 29);
+    color: white;
+}

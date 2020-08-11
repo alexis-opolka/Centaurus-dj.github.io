@@ -1,0 +1,66 @@
+@import "backgrounds.css";
+@import "typo.css";
+@import "hovers.css";
+@import "navbar.css";
+@import "dropdown.css";
+@import "footer.css";
+
+
+body {
+    user-select: none;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+button {
+    background: inherit;
+    color: inherit;
+    border: 1px;
+    transition: 0.7s;
+    border-radius: 4px;
+}
+.lang-btn {
+    font-size: 30px;
+    color: inherit;
+}
+.main-doc {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative;
+    float: right;
+    min-width: 70%;
+    min-height: 98%;
+    max-width: 70%;
+    background-color: #111111;
+    border-radius: 4px;
+}
+/*
+
+    WE NOW STYLES THE SCROLLBAR
+
+*/
+body::-webkit-scrollbar {
+    width: 1em;
+    transition: 0.3s;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #ce580a;
+}
+
+body::-webkit-scrollbar-track {
+    color: #1a1a1a;
+}
+/*
+
+    My Predefined Html Tags
+
+*/
+tag {
+    color: rgb(19, 123, 207);
+}
