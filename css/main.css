@@ -64,3 +64,34 @@ body::-webkit-scrollbar-track {
 tag {
     color: rgb(19, 123, 207);
 }
+
+
+.SitesForm{
+    min-width: 300px;
+    min-height: 300px;
+    width: 30%;
+    height: 30%;
+    top: 25%;
+    left: 30%;
+    right: auto;
+    z-index: 10;
+    position: absolute;
+    border-radius: 4px;
+}
+
+
+
+#cache {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 600px;
+    margin-left: -500px;
+    margin-top: -300px;
+    background-color: #000000;
+    text-align: center;
+    z-index: 10;
+    visibility: hidden;
+    color: #ffffff;
+}

@@ -8,45 +8,51 @@
     <title>Site web de Centaurus</title>
 </head>
 <body class="main-body">
-    <ul class="little-mid-text">
-        <div class="mid-text white-text center-text index-orange-bg">Index du Site</div>
-        <li> <a href="./index.html" class="active">Accueil</a></li>
-        <li> <a href="pages/games/hgza/index.html">Projet en cours</a></li>
-        <li> <a href="pages/recommends/index.html">Mes recommendations</a></li>
-    </ul>
-
-    <div class="main-doc white-text">
-        <div class="center-text big-text mid-dark-orange-text">Une Présentation</div>
-        <br><br>
-        <div id="fr-present-body">
-            <p class="title mid-text orange-text">Qui suis-je ?</p>
-            <p class="little-mid-text center-text">
-                Je m'appelle Alexis aussi connu en tant que Centaurus. <br>
-                J'ai actuellement 16ans et je programme depuis que j'ai 14ans.
-            </p>
-            <p class="title mid-text orange-text">En quoi est-ce que je programme ?</p>
-            <p class="little-mid-text center-text">
-                <div class="click-dropdown center-text">
-                    <button onclick="ShowDropDowns('code-base', 'base-in')" class="dropbtn">J'ai des bases en : <indic id="base-in"> +</indic></button>
-                    <div id="code-base" class="dropdown-content little-mid-text">
-                        - C++ <br>
-                        - C# <br>
-                        - Raspberry <br>
-                        - Arduino <br>
-                        - Java <br>
+    <div id="main-page">
+        <ul class="little-mid-text" style="z-index: 1;">
+            <div class="mid-text white-text center-text index-orange-bg">Index du Site</div>
+            <li> <a href="./index.html" class="active">Accueil</a></li>
+            <li> <a href="pages/games/hgza/index.html">Projet en cours</a></li>
+            <li> <a href="pages/recommends/index.html">Mes recommendations</a></li>
+    
+    
+            <!-- THIS LINE NEED TO BE AT THE BOTTOM OF THE LIST OF LINKS -->
+            <li class="bott-text"> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
+        </ul>
+    
+        <div class="main-doc white-text">
+            <div class="center-text big-text mid-dark-orange-text">Une Présentation</div>
+            <br><br>
+            <div id="fr-present-body">
+                <p class="title mid-text orange-text">Qui suis-je ?</p>
+                <p class="little-mid-text center-text">
+                    Je m'appelle Alexis aussi connu en tant que Centaurus. <br>
+                    J'ai actuellement 16ans et je programme depuis que j'ai 14ans.
+                </p>
+                <p class="title mid-text orange-text">En quoi est-ce que je programme ?</p>
+                <p class="little-mid-text center-text">
+                    <div class="click-dropdown center-text">
+                        <button onclick="ShowDropDowns('code-base', 'base-in')" class="dropbtn">J'ai des bases en : <indic id="base-in"> +</indic></button>
+                        <div id="code-base" class="dropdown-content little-mid-text">
+                            - C++ <br>
+                            - C# <br>
+                            - Raspberry <br>
+                            - Arduino <br>
+                            - Java <br>
+                        </div>
                     </div>
-                </div>
-                <div class="click-dropdown center-text">
-                    <button onclick="ShowDropDowns('code-know', 'know-in')" class="dropbtn">Je sais Programmer en : <indic id="know-in"> +</indic></button>
-                    <div id="code-know" class="dropdown-content little-mid-text">
-                        - Python <br>
-                        - CSS <br>
-                        - Javascript <br>
-                        - HTML <br>
-                        - XML <br>
+                    <div class="click-dropdown center-text">
+                        <button onclick="ShowDropDowns('code-know', 'know-in')" class="dropbtn">Je sais Programmer en : <indic id="know-in"> +</indic></button>
+                        <div id="code-know" class="dropdown-content little-mid-text">
+                            - Python <br>
+                            - CSS <br>
+                            - Javascript <br>
+                            - HTML <br>
+                            - XML <br>
+                        </div>
                     </div>
-                </div>
-            </p>
+                </p>
+            </div>
         </div>
     </div>
     <footer class="little-text center-text grey-text">

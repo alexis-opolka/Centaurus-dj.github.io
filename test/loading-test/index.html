@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Loading</title>
+    <style>
+        #cache {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1000px;
+            height: 600px;
+            margin-left: -500px;
+            margin-top: -300px;
+            background-color: #000000;
+            text-align: center;
+            z-index: 10;
+            visibility: hidden;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body >
+    
+</body>
+<script>
+    document.write('<div id=\"cache\">Veuillez patienter...<\/div>');
+    document.write('<script type=\"text\/javascript\">');
+    var nava = (document.layers);
+    var dom = (document.getElementById);
+    var iex = (document.all);
+    if (nava) { cach = document.cache }
+    else if (dom) { cach = document.getElementById("cache").style }
+    else if (iex) { cach = cache.style }
+    largeur = screen.width;
+    cach.visibility = "visible";
+    function cacheOff()
+    {cach.visibility = "hidden";}
+    document.write('<\/script>');
+</script>
+</html>

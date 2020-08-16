@@ -75,6 +75,15 @@
 .right-text {
     text-align: right;
 }
+.bott-text {
+    vertical-align: bottom;
+}
+.up-text {
+    vertical-align: top;
+}
+.mid-text {
+    vertical-align: middle;
+}
 /*
 
 
