@@ -115,9 +115,9 @@ span + span {
     text-align: center;
     vertical-align: middle;
 }
-.show {
-    display: block;
+.show{
+    display:block!important
 }
-.hidden {
-    display: none;
+.hide{
+    display:none!important
 }

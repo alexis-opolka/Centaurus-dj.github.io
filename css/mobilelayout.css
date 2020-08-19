@@ -49,3 +49,17 @@
         display:none!important
     }
 }
+@media (max-width: 448px){
+    .big-text{
+        font-size: 40px
+    }
+}
+@media (max-width: 356px){
+    .big-text {
+        font-size: 30px;
+        overflow: hidden;
+    }
+}
+#phone-nav {
+    display: none;
+}

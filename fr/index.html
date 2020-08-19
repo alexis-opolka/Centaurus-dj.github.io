@@ -11,7 +11,7 @@
 <body class="main-body">
     <div id="main-page">
         <div class="navbar little-mid-text" id="computer-nav">
-            <div class="hide-medium hide-large index-orange-bg white-text right-text">
+            <div class="hide-medium hide-large index-orange-bg white-text right-text big-text">
                 <a href="javascript:void(0)" onclick="ShowNavBar()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -23,7 +23,7 @@
             <!-- THIS LINE NEED TO BE AT THE BOTTOM OF THE LIST OF LINKS -->
             <li class="bott-text hide-small "> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
         </div>
-        <div id="phone-nav" class="navbar little-mid-text hidden">
+        <div id="phone-nav" class="navbar little-mid-text w3-bar-block w3-black hide w3-hide-large w3-hide-medium w3-top">
             <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
             <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -69,7 +69,7 @@
     </div>
     <footer class="little-text center-text grey-text">
         Website made by Centaurus | Hosted with <span class="fa fa-heart red-text"></span> by Github <br>
-        <span class="fa fa-copyright"></span> Centaurus 2020
+        <span class="fa fa-copyright"></span> Centaurus 2020 - All Rights Reserved
     </footer>
 </body>
 <script src="/js/funcs.js"></script>
@@ -78,9 +78,9 @@
     // Used to toggle the menu on small screens when clicking on the menu button
 function ShowNavBar() {
   var x = document.getElementById("phone-nav");
-  if (x.className.indexOf("show") == -1) {
-    x.className.replace(" hidden", " show")
-    x.style.marginLeft = "0%"
+  if (x.className.indexOf(" show") == -1) {
+    x.className += " show";
+    x.style.marginLeft = "0"
   } else { 
     x.className = x.className.replace(" show", "");
   }
