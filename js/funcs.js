@@ -104,6 +104,33 @@ function GoToSiteCondition(inputid, fromEntry){
   }
 };
 
-
+// Used to toggle the menu on small screens when clicking on the menu button
+function ShowNavBar() {
+  var x = document.getElementById("phone-nav");
+  if (x.style.display === "none") {
+    console.log("Elem opened");
+    OpenPhoneNav();
+  } else { 
+    console.log("Elem Closed");
+    ClosePhoneNav();
+  }
+};
+function OpenPhoneNav(){
+    var x = document.getElementById("phone-nav");
+    var y = document.getElementById("computer-nav");
+    y.style.transition = "1.7s"
+    x.style.display = "block";
+    y.style.marginLeft = "0";
+    y.style.zIndex = "2";
+    y.style.width = "fit-content"
+};
+function ClosePhoneNav(){
+    var x = document.getElementById("phone-nav");
+    var y = document.getElementById("computer-nav");
+    x.style.display = "none";
+    y.style.marginLeft = "-10%";
+    y.style.zIndex = "2";
+    y.style.width = "25%"
+}
 
 accessasked = false;

@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8e3ca97b60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Site web de Centaurus</title>
 </head>
 <body class="main-body">
     <div id="main-page">
         <div class="navbar little-mid-text" id="computer-nav">
             <div class="hide-medium hide-large index-orange-bg white-text right-text big-text">
-                <a href="javascript:void(0)" onclick="ShowNavBar()" title="Toggle Navigation Menu">
+                <a  class="white-text" href="javascript:void(0)" onclick="ShowNavBar()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -75,34 +74,4 @@
 </body>
 <script src="/js/funcs.js"></script>
 <script src="/js/SitesList.js"></script>
-<script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-function ShowNavBar() {
-  var x = document.getElementById("phone-nav");
-  if (x.style.display === "none") {
-    console.log("Elem opened");
-    OpenPhoneNav();
-  } else { 
-    console.log("Elem Closed");
-    ClosePhoneNav();
-  }
-};
-function OpenPhoneNav(){
-    var x = document.getElementById("phone-nav");
-    var y = document.getElementById("computer-nav");
-    y.style.transition = "1.7s"
-    x.style.display = "block";
-    y.style.marginLeft = "0";
-    y.style.zIndex = "2";
-    y.style.width = "fit-content"
-};
-function ClosePhoneNav(){
-    var x = document.getElementById("phone-nav");
-    var y = document.getElementById("computer-nav");
-    x.style.display = "none";
-    y.style.marginLeft = "-10%";
-    y.style.zIndex = "2";
-    y.style.width = "25%"
-}
-</script>
 </html>
