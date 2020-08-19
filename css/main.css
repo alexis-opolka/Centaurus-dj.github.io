@@ -4,7 +4,7 @@
 @import "navbar.css";
 @import "dropdown.css";
 @import "footer.css";
-
+@import "mobilelayout.css";
 
 body {
     user-select: none;
@@ -69,16 +69,24 @@ tag {
 .SitesForm{
     min-width: 300px;
     min-height: 300px;
-    width: 30%;
-    height: 30%;
-    top: 25%;
-    left: 30%;
+    width: 40%;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    top: 10%;
+    left: 35%;
     right: auto;
     z-index: 10;
     position: absolute;
     border-radius: 4px;
 }
-
+.SitesForm input {
+    font-size: 30px;
+    white-space: nowrap;
+}
+span + span {
+    margin-left: 10px;
+}
 
 
 #cache {
@@ -94,4 +102,22 @@ tag {
     z-index: 10;
     visibility: hidden;
     color: #ffffff;
+}
+.WarnDiv {
+    width: 80%;
+    height: 40px;
+    max-height: fit-content;
+    margin-left: 30px;
+    background: #dd3704c9;
+    border-left: solid 8px #d35908;
+    border-radius: 4px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
 }

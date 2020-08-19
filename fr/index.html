@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8e3ca97b60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Site web de Centaurus</title>
 </head>
 <body class="main-body">
     <div id="main-page">
-        <ul class="little-mid-text" style="z-index: 1;">
-            <div class="mid-text white-text center-text index-orange-bg">Index du Site</div>
-            <li> <a href="./index.html" class="active">Accueil</a></li>
-            <li> <a href="pages/games/hgza/index.html">Projet en cours</a></li>
-            <li> <a href="pages/recommends/index.html">Mes recommendations</a></li>
-    
-    
+        <div class="navbar little-mid-text" id="computer-nav">
+            <div class="hide-medium hide-large index-orange-bg white-text right-text">
+                <a href="javascript:void(0)" onclick="ShowNavBar()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="mid-text white-text center-text index-orange-bg hide-small">Index du Site</div>
+            <li class=" hide-small "> <a href="./index.html" class="active">Accueil</a></li>
+            <li class=" hide-small "> <a href="pages/games/hgza/index.html">Projet en cours</a></li>
+            <li class=" hide-small "> <a href="pages/recommends/index.html">Mes recommendations</a></li>
             <!-- THIS LINE NEED TO BE AT THE BOTTOM OF THE LIST OF LINKS -->
-            <li class="bott-text"> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
-        </ul>
+            <li class="bott-text hide-small "> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
+        </div>
+        <div id="phone-nav" class="navbar little-mid-text hidden">
+            <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+        </div>
+        
     
         <div class="main-doc white-text">
             <div class="center-text big-text mid-dark-orange-text">Une Présentation</div>
@@ -53,6 +64,7 @@
                     </div>
                 </p>
             </div>
+            <br>
         </div>
     </div>
     <footer class="little-text center-text grey-text">
@@ -60,5 +72,18 @@
         <span class="fa fa-copyright"></span> Centaurus 2020
     </footer>
 </body>
-<script src="../js/funcs.js"></script>
+<script src="/js/funcs.js"></script>
+<script src="/js/SitesList.js"></script>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+function ShowNavBar() {
+  var x = document.getElementById("phone-nav");
+  if (x.className.indexOf("show") == -1) {
+    x.className.replace(" hidden", " show")
+    x.style.marginLeft = "0%"
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+}
+</script>
 </html>
