@@ -1,3 +1,25 @@
+/*
+    WE SET THE INITIAL STYLE FOR NAVBAR FOR COMPUTER SCREENS & TV.
+*/
+@media screen and (min-width: 815px){
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        height: 98%; 
+        background-color: #111111;
+        position: fixed; /* Make it stick, even on scroll */
+        overflow: auto; /* Enable scrolling if the sidenav has too much content */
+        border-radius: 4px;
+        margin-left: 0%;
+    }
+}
+/*
+    WE SET THE DIFFERENTS VARIATIONS FOR THE DIFFERENTS TYPES OF SCREENS AND DEVICES, IT MEANS
+    MOBILES AND TABLETS.
+*/
+
 @media screen and (max-width: 814px) {
     .navbar {
         height: 90%;
@@ -59,7 +81,10 @@
         font-size: 30px;
         overflow: hidden;
     }
-}
-#phone-nav {
-    display: none;
+    .main-doc {
+        overflow: hidden;
+    }
+    footer {
+        overflow: hidden;
+    }
 }

@@ -22,12 +22,13 @@
             <li class=" hide-small "> <a href="pages/recommends/index.html">Mes recommendations</a></li>
             <!-- THIS LINE NEED TO BE AT THE BOTTOM OF THE LIST OF LINKS -->
             <li class="bott-text hide-small "> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
-        </div>
-        <div id="phone-nav" class="navbar little-mid-text w3-bar-block w3-black hide w3-hide-large w3-hide-medium w3-top">
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+            <div id="phone-nav" class="little-mid-text white-text" style="display: none;">
+                <li> <a href="./index.html" class="active">Accueil</a></li>
+                <li> <a href="pages/games/hgza/index.html">Projet en cours</a></li>
+                <li> <a href="pages/recommends/index.html">Mes recommendations</a></li>
+                <!-- THIS LINE NEED TO BE AT THE BOTTOM OF THE LIST OF LINKS -->
+                <li class="bott-text"> <a href="#traveltosites" onclick="AccessSitesForm()">Accéder à un site</a></li>
+            </div>
         </div>
         
     
@@ -78,12 +79,30 @@
     // Used to toggle the menu on small screens when clicking on the menu button
 function ShowNavBar() {
   var x = document.getElementById("phone-nav");
-  if (x.className.indexOf(" show") == -1) {
-    x.className += " show";
-    x.style.marginLeft = "0"
+  if (x.style.display === "none") {
+    console.log("Elem opened");
+    OpenPhoneNav();
   } else { 
-    x.className = x.className.replace(" show", "");
+    console.log("Elem Closed");
+    ClosePhoneNav();
   }
+};
+function OpenPhoneNav(){
+    var x = document.getElementById("phone-nav");
+    var y = document.getElementById("computer-nav");
+    y.style.transition = "1.7s"
+    x.style.display = "block";
+    y.style.marginLeft = "0";
+    y.style.zIndex = "2";
+    y.style.width = "fit-content"
+};
+function ClosePhoneNav(){
+    var x = document.getElementById("phone-nav");
+    var y = document.getElementById("computer-nav");
+    x.style.display = "none";
+    y.style.marginLeft = "-10%";
+    y.style.zIndex = "2";
+    y.style.width = "25%"
 }
 </script>
 </html>
