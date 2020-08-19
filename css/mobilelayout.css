@@ -20,8 +20,31 @@
     WE SET THE DIFFERENTS VARIATIONS FOR THE DIFFERENTS TYPES OF SCREENS AND DEVICES, IT MEANS
     MOBILES AND TABLETS.
 */
+@media (max-width:600px){
+    .hide-small{
+        display:none!important
+    }
+    .navbar {
+        margin-left: -10%;
+    }
+}
 
-@media screen and (max-width: 814px) {
+@media (max-width:992px) and (min-width:601px){
+    .hide-medium{
+        display:none!important
+    }
+    button {
+        background: inherit;
+        color: inherit;
+        border: 1px;
+        transition: 0.7s;
+        border-radius: 4px;
+        width: 80px;
+    }
+    .lang-btn {
+        font-size: 70px;
+        color: #f9300c;
+    }
     .navbar {
         height: 90%;
         z-index: 1;
@@ -32,6 +55,12 @@
     }
     .mid-text {
         font-size: 20px;
+    }
+    .little-mid-text {
+        font-size: 15px
+    }
+    .big-text {
+        font-size: 30px;
     }
     .SitesForm{
         min-width: 300px;
@@ -54,36 +83,10 @@
         z-index: 10;
     }
 }
-@media (max-width:600px){
-    .hide-small{
-        display:none!important
-    }
-    .navbar {
-        margin-left: -10%;
-    }
-    
 @media (min-width:993px){
     .hide-large{
         display:none!important
     }
-}
-@media (max-width:992px) and (min-width:601px){
-    .hide-medium{
-        display:none!important
-    }
-    button {
-        background: inherit;
-        color: inherit;
-        border: 1px;
-        transition: 0.7s;
-        border-radius: 4px;
-        width: 80px;
-    }
-    .lang-btn {
-        font-size: 70px;
-        color: #f9300c;
-    }
-}
 }
 @media (max-width: 448px){
     .big-text{
