@@ -12,3 +12,11 @@ li a:hover {
     background-color: rgb(156, 65, 29);
     color: white;
 }
+
+a {
+    color: rgb(202, 103, 22);
+    transition: 0.7s;
+}
+#fr-git-public-projects-pres p a:hover{
+    color: rgb(109, 202, 22);
+}

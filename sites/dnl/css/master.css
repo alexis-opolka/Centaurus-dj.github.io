@@ -1,0 +1,104 @@
+/*
+
+  HTML Native tags
+
+*/
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+header {
+  font-size: 32px;
+  text-align: center;
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: 0.4s;
+}
+a:hover {
+  color: #00b2e9;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  padding: 5px;
+  background-color: #111111;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  user-select: none;
+}
+span {
+  font-size: inherit;
+}
+
+indic {
+  text-align: right;
+}
+
+/*
+
+  HTML/CSS Classes
+
+*/
+
+.graph-div {
+  text-align: center;
+  object-position: center;
+  padding: 10px;
+}
+
+.graph-menu {
+  font-size: 50px;
+}
+
+.graph {
+  padding: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+.header-text {
+  background: -webkit-linear-gradient(120deg, #8de203 10%, #00b2e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .7s;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 16px;
+  width: 98%;
+  font-size: max-content;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  user-select: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.753);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.click-dropdown {
+  text-align: center;
+  align-items: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  transition: 1.7s;
+}

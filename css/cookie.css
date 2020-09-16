@@ -1,0 +1,19 @@
+.alert-cookie {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    background: #333333;
+    color: #fff;
+    position: absolute;
+    display: none;
+    transition: 0.7s;
+}
+.alert-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.alert-cookie button {
+    background-color: #111111;
+}

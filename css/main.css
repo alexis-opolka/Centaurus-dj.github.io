@@ -5,6 +5,15 @@
 @import "dropdown.css";
 @import "footer.css";
 @import "mobilelayout.css";
+@import "cookie.css";
+
+
+
+/* 
+
+    HTML tags style 
+
+*/
 
 body {
     user-select: none;
@@ -20,9 +29,49 @@ button {
     transition: 0.7s;
     border-radius: 4px;
 }
+
+span + span {
+    margin-left: 10px;
+}
+
+p a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/*
+
+    HTML/CSS ID style
+
+*/
+
+#cache {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 600px;
+    margin-left: -500px;
+    margin-top: -300px;
+    background-color: #000000;
+    text-align: center;
+    z-index: 10;
+    visibility: hidden;
+    color: #ffffff;
+}
+
+/* 
+
+    HTML/CSS classes style 
+    
+*/
+
 .lang-btn {
     font-size: 30px;
     color: inherit;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
 }
 .main-doc {
     margin: 0;
@@ -36,36 +85,6 @@ button {
     background-color: #111111;
     border-radius: 4px;
 }
-/*
-
-    WE NOW STYLES THE SCROLLBAR
-
-*/
-body::-webkit-scrollbar {
-    width: 1em;
-    transition: 0.3s;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #444444;
-}
-body::-webkit-scrollbar-thumb:hover {
-    background-color: #ce580a;
-}
-
-body::-webkit-scrollbar-track {
-    color: #1a1a1a;
-}
-/*
-
-    My Predefined Html Tags
-
-*/
-tag {
-    color: rgb(19, 123, 207);
-}
-
-
 .SitesForm{
     min-width: 300px;
     min-height: 300px;
@@ -84,28 +103,9 @@ tag {
     font-size: 30px;
     white-space: nowrap;
 }
-span + span {
-    margin-left: 10px;
-}
-
-
-#cache {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1000px;
-    height: 600px;
-    margin-left: -500px;
-    margin-top: -300px;
-    background-color: #000000;
-    text-align: center;
-    z-index: 10;
-    visibility: hidden;
-    color: #ffffff;
-}
 .WarnDiv {
     width: 80%;
-    height: 40px;
+    height: max-content;
     max-height: fit-content;
     margin-left: 30px;
     background: #dd3704c9;
@@ -120,4 +120,35 @@ span + span {
 }
 .hide{
     display:none!important
+}
+
+/* 
+
+    Dev defined Html Tags 
+
+*/
+tag {
+    color: rgb(19, 123, 207);
+}
+
+/*
+
+    WE NOW STYLES THE SCROLLBAR
+
+*/
+
+body::-webkit-scrollbar {
+    width: 1em;
+    transition: 0.3s;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #ce580a;
+}
+
+body::-webkit-scrollbar-track {
+    color: #1a1a1a;
 }

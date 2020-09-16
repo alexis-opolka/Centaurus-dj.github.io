@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>Site web de Centaurus</title>
 </head>
-<body class="main-body">
+<body class="main-body" onload="Show('alert-cookie')">
     <div id="main-page">
         <div class="navbar little-mid-text" id="computer-nav">
             <div class="hide-medium hide-large index-orange-bg white-text right-text big-text">
@@ -35,34 +35,43 @@
             <div class="center-text big-text mid-dark-orange-text">Une Présentation</div>
             <br><br>
             <div id="fr-present-body">
-                <p class="title mid-text orange-text">Qui suis-je ?</p>
-                <p class="little-mid-text center-text">
-                    Je m'appelle Alexis aussi connu en tant que Centaurus. <br>
-                    J'ai actuellement 16ans et je programme depuis que j'ai 14ans.
-                </p>
-                <p class="title mid-text orange-text">En quoi est-ce que je programme ?</p>
-                <p class="little-mid-text center-text">
-                    <div class="click-dropdown center-text">
-                        <button onclick="ShowDropDowns('code-base', 'base-in')" class="dropbtn">J'ai des bases en : <indic id="base-in"> +</indic></button>
-                        <div id="code-base" class="dropdown-content little-mid-text">
-                            - C++ <br>
-                            - C# <br>
-                            - Raspberry <br>
-                            - Arduino <br>
-                            - Java <br>
+                <div id="fr-who-am-i">
+                    <p class="title mid-text orange-text">Qui suis-je ?</p>
+                    <p class="little-mid-text center-text">
+                        Je m'appelle Alexis aussi connu en tant que Centaurus. <br>
+                        J'ai actuellement 16ans et je programme depuis que j'ai 14ans.
+                    </p>
+                </div>
+                <div id="fr-coding-gen-pres">
+                    <p class="title mid-text orange-text">En quoi est-ce que je code ?</p>
+                    <p class="little-mid-text center-text">
+                        <div class="click-dropdown center-text">
+                            <button onclick="ShowDropDowns('code-base', 'base-in')" class="dropbtn">J'ai des bases en : <indic id="base-in"> +</indic></button>
+                            <div id="code-base" class="dropdown-content little-mid-text">
+                                - C++ <br>
+                                - C# <br>
+                                - Raspberry <br>
+                                - Arduino <br>
+                                - Java <br>
+                            </div>
                         </div>
-                    </div>
-                    <div class="click-dropdown center-text">
-                        <button onclick="ShowDropDowns('code-know', 'know-in')" class="dropbtn">Je sais Programmer en : <indic id="know-in"> +</indic></button>
-                        <div id="code-know" class="dropdown-content little-mid-text">
-                            - Python <br>
-                            - CSS <br>
-                            - Javascript <br>
-                            - HTML <br>
-                            - XML <br>
+                        <div class="click-dropdown center-text">
+                            <button onclick="ShowDropDowns('code-know', 'know-in')" class="dropbtn">Je sais coder en : <indic id="know-in"> +</indic></button>
+                            <div id="code-know" class="dropdown-content little-mid-text">
+                                - Python <br>
+                                - CSS <br>
+                                - Javascript <br>
+                                - HTML <br>
+                                - XML <br>
+                            </div>
                         </div>
-                    </div>
-                </p>
+                    </p>
+                </div>
+                <div id="fr-git-public-projects-pres">
+                    <p class="title mid-text orange-text">
+                        Quels sont mes projets déjà faits et présents sur <a href="#OpenInNewTab" onclick="openInNewTab('https://github.com')">Github</a> ?
+                    </p>
+                </div>
             </div>
             <br>
         </div>
@@ -72,6 +81,36 @@
         <span class="fa fa-copyright"></span> Centaurus 2020 - All Rights Reserved
     </footer>
 </body>
+
+
+<div class="alert-cookie" id="alert-cookie">
+    <div class="alert-title">
+        Attention ! 
+    </div>
+    <div class="alert-content">
+        Ce site utilise actuellement des cookies à des fins de test et en vue de faire des statistiques. <br>
+        Il utilise aussi des cookies permettant un bon fonctionnement de celui-ci et vous permet d'avoir une meilleure
+        navigation au sein de clui-ci.
+
+        <div class="mid-text red-text">
+            Les cookies sont actuellemnt en développement et n'ont, pour l'instant, aucune activité au sein de ce site. <br>
+            veuillez donc prendre en compte que seuls les cookies liés au fonctionnement de base du site fonctionnent et que vous n'avez aucune possibilité de les arrêter. <br>
+            Si vous n'acceptez pas ce fait alors nous vous conseillons de partir du site et de revenir quand il sera correctement fonctionnel.
+        </div>
+        <div class="little-text">
+            En continuant votre navigation, vous acceptez l'utilisation des cookies et donc, de vos possibles données personnelles. <br>
+            Vous êtes seul et unique repsonsables du choix que vous prenez et <text style="font: italic;">Centaurus</text> n'est en aucun cas <br>
+            responsable de vos actions sur son site <br>
+        </div>
+
+        <div class="alert-choice mid-text">
+            <button onclick="HideAll('alert-cookie')">Continuer ma navigation sur ce site</button>
+            <button onclick="NoCookieConsent()">Ne pas continuer ma navigation</button>
+        </div>
+    </div>
+</div>
+
+
 <script src="/js/funcs.js"></script>
 <script src="/js/SitesList.js"></script>
 </html>

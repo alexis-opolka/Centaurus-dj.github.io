@@ -1,3 +1,13 @@
+function Show(divid){
+  body = document.getElementById(divid);
+  body.classList.toggle("show");
+}
+
+function HideAll(divid){
+  body = document.getElementById(divid);
+  body.classList.toggle("show");
+}
+
 function ShowDropDowns(dropdownid, indicid){
     dropdown = document.getElementById(dropdownid);
     indic = document.getElementById(indicid);
@@ -70,8 +80,9 @@ function GoToSiteCondition(inputid, fromEntry){
   console.log("GotToSiteCondition() function is touched");
   const input = document.getElementById(inputid).value;
   const jsondata = '{ "Sites": ['+
-        '{ "name": "Vervet-Editions", "link": "/sites/Vervet-Editions/index.html", "token": "VE123.chs" },'+
-        '{ "name": "Octopot", "link": "/sites/Octopot/index.html", "token": "Oc456.cps" }]}';
+        '{ "name": "Vervet-Editions", "link": "/sites/Vervet-Editions/index.html", "token": "VE123.cps" },'+
+        '{ "name": "Octopot", "link": "/sites/Octopot/index.html", "token": "Oc456.cps" },'+
+        '{ "name": "Dnl", "link": "/sites/dnl/index.html", "token": "sae789.cps" } ]}';
   const obj = JSON.parse(jsondata);
 
   if(document.getElementById("EntryInfos")){} else {
@@ -97,6 +108,9 @@ function GoToSiteCondition(inputid, fromEntry){
       } else if(input === obj.Sites[1].token){
         warndiv.textContent = "We are redirecting you, wait a minute...";
         window.location.href = obj.Sites[1].link;
+      } else if(input === obj.Sites[2].token){
+        warndiv.textContent = "We are redirecting you, wait a minute...";
+        window.location.href = obj.Sites[2].link;
       }
     }
   } else {
@@ -131,6 +145,11 @@ function ClosePhoneNav(){
     y.style.marginLeft = "-10%";
     y.style.zIndex = "2";
     y.style.width = "25%"
+}
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
 }
 
 accessasked = false;
