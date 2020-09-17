@@ -6,6 +6,7 @@
 body {
   background-color: #1a1a1a;
   color: #ffffff;
+  user-select: none;
 }
 header {
   font-size: 32px;
@@ -101,4 +102,76 @@ indic {
   display: none;
   z-index: 1;
   transition: 1.7s;
+}
+.graph {
+  background-image: "../original-graph/data/img/heart.png";
+}
+.grimg {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+}
+.grimg10 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image: url("/sites/dnl/original-graph/data/img/heart10.png");
+}
+.grimg30 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image:  url("/sites/dnl/original-graph/data/img/heart30.png");
+}
+.grimg50 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image: url("/sites/dnl/original-graph/data/img/heart50.png");
+}
+.grimg70 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image: url("/sites/dnl/original-graph/data/img/heart70.png");
+}
+.grimg80 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image: url("/sites/dnl/original-graph/data/img/heart80.png");
+}
+.grimg100 {
+  width: 60px;
+  max-width: 60px;
+  height: 60px;
+  max-height: 60px;
+  background-image: url("/sites/dnl/original-graph/data/img/heart100.png");
+}
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 1em;
+  transition: 0.3s;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #444444;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0ace83;
+}
+
+body::-webkit-scrollbar-track {
+  color: #1a1a1a;
 }
