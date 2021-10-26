@@ -1,0 +1,27 @@
+/* Background Style */
+
+.dark-bg {
+  background-color: #1e1e1e;
+}
+.light-bg {
+  background-color: #c3c3c3;
+}
+
+.black-bg {
+  background-color: #000000;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+
+/* Foreground Style */
+
+.white-fg {
+  color: #ffffff;
+}
+.black-fg {
+  color: #000000;
+}
+.grey-fg {
+  color: #727272
+}
