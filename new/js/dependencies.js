@@ -19,7 +19,7 @@ function setPageThemeLight() {
 }
 
 function setPageThemeTest() {
-  themeManager.createTheme('theme-test', 'background-color: #fc1e65; color: #ffffff', 'bruh');
+  themeManager.createTheme('theme-test', 'background-color: #1184b9; color: #ffffff', 'bruh');
   themeManager.setThemeThenCSSBuild('theme-test');
 }
 

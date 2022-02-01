@@ -19,15 +19,21 @@ export class MainClass {
 
       this.config = ''; // Here is added the configuration of the page
       this.CSSconfig = ''; // Here is added the configuration of the page in CSS code
+      this.currentTheme = ''; // Here is added the current displayed theme of the page
 
       this.headerObject = new HeaderClass('header');
       this.footerObject = new FooterClass('footer');
   }
 
   createTheme(themeName, themeCSSCode, themeCSSClass) {
-    this.availableThemes.push(themeName);
-    this.themes[themeName] = themeCSSClass;
-    this.CSSThemeData[themeName] = themeCSSCode;
+    if (this.availableThemes.includes(themeName) === false) {
+      this.availableThemes.push(themeName);
+      this.themes[themeName] = themeCSSClass;
+      this.CSSThemeData[themeName] = themeCSSCode;
+      console.debug("Theme created");
+    } else {
+      console.debug("Theme already created... No action taken...");
+    }
   }
 
   setTheme(theme) {
@@ -36,6 +42,7 @@ export class MainClass {
       this.CSSconfig = this.CSSThemeData[theme];
       this.footerObject.applyTheme(this.themes[theme]);
       this.footerObject.applyCSSTheme(this.CSSThemeData[theme]);
+      this.currentTheme = theme;
     }
   }
 
@@ -69,6 +76,9 @@ export class MainClass {
   setThemeThenCSSBuild(themeName) {
     this.setTheme(themeName);
     this.buildCSS();
+  };
+  getCurrentThemeName(){
+    return this.currentTheme;
   }
 }
 
