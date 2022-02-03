@@ -84,14 +84,15 @@ export class MainClass {
 
 class FooterClass {
   constructor(footerId) {
-    this.themeName = undefined;
+    this.themeName = "dark-footer";
     this.cssData = undefined;
 
-    this.copyright = undefined;
-    this.homePage = undefined;
-    this.aboutPage = undefined;
-    this.contactPage = undefined;
-    this.privacyPolicyPage = undefined;
+    this.copyrightDate = "2020-2022";
+    this.copyrightHolder = "Alexis Opolka (Centaurus)"
+    this.homePage = "https://centaurus-dj.github.io/new/";
+    this.aboutPage = "https://centaurus-dj.github.io/new/about/";
+    this.contactPage = "https://centaurus-dj.github.io/new/contact";
+    this.privacyPolicyPage = "https://centaurus-dj.github.io/new/privacy-policy/";
 
     this.footerId = footerId;
     this.footerDiv = document.getElementById(this.footerId);
