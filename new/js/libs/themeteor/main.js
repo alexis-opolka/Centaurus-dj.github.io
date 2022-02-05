@@ -22,7 +22,7 @@ export class MainClass {
       this.currentTheme = ''; // Here is added the current displayed theme of the page
 
       this.headerObject = new HeaderClass('header');
-      this.footerObject = new FooterClass('footer');
+      this.footerObject = new FooterClass('page-footer');
   }
 
   createTheme(themeName, themeCSSCode, themeCSSClass) {
@@ -85,7 +85,7 @@ export class MainClass {
 class FooterClass {
   constructor(footerId) {
     this.themeName = "dark-footer";
-    this.cssData = undefined;
+    this.cssData = "background-color: #1e1e1e; color: #fff; padding: 5px";
 
     this.copyrightDate = "2020-2022";
     this.copyrightHolder = "Alexis Opolka (Centaurus)"
@@ -99,6 +99,7 @@ class FooterClass {
   }
 
   applyTheme(themeData) {
+    console.log(themeData)
     this.themeName = themeData.name;
     this.footerDiv.classList = themeData.classData;
   }
