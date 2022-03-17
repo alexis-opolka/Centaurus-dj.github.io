@@ -85,7 +85,7 @@ export class MainClass {
 class FooterClass {
   constructor(footerId) {
     this.themeName = "dark-footer";
-    this.cssData = "background-color: #1e1e1e; color: #fff; padding: 5px";
+    this.cssData = "background-color: #1e1e1e; color: #525252; padding: 5px";
 
     this.copyrightDate = "2020-2022";
     this.copyrightHolder = "Alexis Opolka (Centaurus)"

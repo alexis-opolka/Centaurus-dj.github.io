@@ -1,21 +1,13 @@
-/* User-defined styles of Divs*/
-.footer {
-  background-color: #1e1e1e;
+/* DOM elements*/
+a {
+  color: #27e0a9
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* User-defined styles of Divs*/
+.footer {
+  background-color: #464545;
+}
 
 /* Background Style */
 
