@@ -1,0 +1,13 @@
+{
+  "name": "centaurus-dj.github.io",
+  "version": "2.0.0",
+  "description": "Centaurus Website",
+  "main": "index.js",
+  "repository": "https://github.com/Centaurus-dj/Centaurus-dj.github.io.git",
+  "author": "Centaurus",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "reactjs": "^1.0.0"
+  }
+}
