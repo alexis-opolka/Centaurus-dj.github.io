@@ -1,7 +1,7 @@
 # Centaurus-dj.github.io
 
 Click [here](https://centaurus-dj.github.io/) to access the deployed site.\
-Here is the complete url: https://centaurus-dj.github.io/
+Here is the complete URL: https://centaurus-dj.github.io/
 
 ## What is this repository
 
