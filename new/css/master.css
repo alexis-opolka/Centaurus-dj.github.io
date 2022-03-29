@@ -18,6 +18,11 @@ footer {
   font-size: 34px;
   text-align: center;
 }
+.main-title {
+  font-size: 28px;
+  text-align: left;
+  text-decoration: underline;
+}
 
 /* Background Style */
 
