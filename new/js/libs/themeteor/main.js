@@ -62,6 +62,7 @@ export class MainClass {
     console.log('Built -> body-class-data: ' + this.config + '.')
     document.body.classList = this.config;
     document.body.style = '';
+    this.footerObject.build();
   };
   buildCSS() {
     console.log('Built -> body-style-data: ' + this.CSSconfig + '.')
@@ -85,7 +86,7 @@ export class MainClass {
 class FooterClass {
   constructor(footerId) {
     this.themeName = "dark-footer";
-    this.cssData = "background-color: #1e1e1e; color: #525252; padding: 5px";
+    this.cssData = "background-color: #1a1a1a; color: #6d6d6d; padding: 5px";
 
     this.copyrightDate = "2020-2022";
     this.copyrightHolder = "Alexis Opolka (Centaurus)"
@@ -108,6 +109,11 @@ class FooterClass {
     if (this.footerDiv.classList == '' | this.footerDiv.classList == "undefined") {
       this.footerDiv.style = this.cssData;
     }
+  }
+  build() {
+    console.log(this.footerDiv)
+    this.footerDiv.classList = "footer";
+    this.footerDiv.style = "";
   }
 }
 

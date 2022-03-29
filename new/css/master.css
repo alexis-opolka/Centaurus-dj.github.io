@@ -3,10 +3,20 @@ a {
   color: #27e0a9
 }
 
+header {
+  display: inline-flex;
+}
+
+footer {
+  color: #6d6b6b;
+  background-color: #111111;
+  text-align: center;
+}
 
 /* User-defined styles of Divs*/
-.footer {
-  background-color: #464545;
+.header-title {
+  font-size: 34px;
+  text-align: center;
 }
 
 /* Background Style */

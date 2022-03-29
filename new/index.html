@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Centaurus' Website</title>
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="./css/master.css">
     <script src="js\dependencies.js" charset="utf-8" type="module" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      Centaurus' Website
+      <div class="header-title">
+        Centaurus' Website
+      </div>
+
+      <div>
+        <button onclick="setPageThemeDark()">Dark Theme</button>
+        <button onclick="setPageThemeLight()">Light Theme</button>
+        <button type="button" name="button" onclick="setPageThemeTest()">Test Theme</button>
+      </div>
     </header>
 
-    <div>
-      <button onclick="setPageThemeDark()">Dark Theme</button>
-      <button onclick="setPageThemeLight()">Light Theme</button>
-      <button type="button" name="button" onclick="setPageThemeTest()">Test Theme</button>
-    </div>
     <p>
       <a href="/old/">Access Old Version</a>
     </p>
     <footer id="page-footer" class="footer">
-      <div>
-        <script src="https://www.ip-address.org/ip-checker.php"></script>
-      </div>
       <hr>
-      Copyright &copy; Alexis Opolka (Centaurus) 2020-2022, All Rights Reserved
+      <div id="legal-data">
+        Copyright &copy; Alexis Opolka (Centaurus) 2020-2022, All Rights Reserved
+      </div>
       <div>
-        <script src="https://www.ip-address.org/ip-checker.php"></script>
+        <!-- <script src="https://www.ip-address.org/ip-checker.php"></script> -->
       </div>
     </footer>
   </body>
