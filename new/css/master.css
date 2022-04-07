@@ -1,27 +1,72 @@
 /* DOM elements*/
+body {
+  transition: 0.7s;
+  overflow-x: hidden;
+}
+
 a {
-  color: #27e0a9
+  color: #27e0a9;
+  transition: 0.7s;
 }
 
 header {
   display: inline-flex;
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+  padding: 5px;
+  border-bottom: #727272 solid 1px;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
   color: #6d6b6b;
   background-color: #111111;
   text-align: center;
+  border-top: #727272 solid 1px;
 }
 
 /* User-defined styles of Divs*/
 .header-title {
   font-size: 34px;
   text-align: center;
+  display: flex;
+  flex-basis: 92%;
 }
+.header-title a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.header-title a:hover {
+  color: #27e0a9;
+  text-decoration: underline;
+}
+
+.header-tools {
+  display: flex;
+  flex-basis: 8%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
 .main-title {
   font-size: 28px;
   text-align: left;
   text-decoration: underline;
+}
+
+.theme-button {
+  padding: 2px;
+  border: none;
+  border-radius: 5px;
+}
+.theme-button:active, .theme-button:hover {
+  border: 1px #27e0a9;
 }
 
 /* Background Style */
@@ -50,4 +95,23 @@ footer {
 }
 .grey-fg {
   color: #727272
+}
+
+/* Style Sheets by ID */
+#dark-theme-bt {
+  color: #fff;
+  background: #424242;
+
+}
+#dark-theme-bt:hover {
+  border: 1px;
+  border-color: #fff;
+}
+#light-theme-bt {
+  color: #000;
+  background: #f1f1f1;
+}
+#blue-theme-bt {
+  color: #fff;
+  background-color: #0aa2e9;
 }

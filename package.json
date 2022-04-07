@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "reactjs": "^1.0.0"
+    "jshint": "^2.13.4",
+    "yarn": "^1.22.18"
   }
 }

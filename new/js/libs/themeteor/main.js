@@ -40,8 +40,6 @@ export class MainClass {
     if (this.availableThemes.includes(theme)) {
       this.config = this.themes[theme];
       this.CSSconfig = this.CSSThemeData[theme];
-      this.footerObject.applyTheme(this.themes[theme]);
-      this.footerObject.applyCSSTheme(this.CSSThemeData[theme]);
       this.currentTheme = theme;
     }
   }
@@ -59,15 +57,18 @@ export class MainClass {
   };
 
   build() {
-    console.log('Built -> body-class-data: ' + this.config + '.')
     document.body.classList = this.config;
     document.body.style = '';
+    console.log('Built -> body-class-data: ' + this.config + '.')
     this.footerObject.build();
+    console.log('Built -> footer-class-data: ' + this.footerObject.cssData + '.')
   };
   buildCSS() {
-    console.log('Built -> body-style-data: ' + this.CSSconfig + '.')
     document.body.classList = '';
     document.body.style = this.CSSconfig;
+    console.log('Built -> body-style-data: ' + this.CSSconfig + '.')
+    this.footerObject.buildCSS();
+    console.log('Built -> footer-style-data: ' + this.footerObject.cssData + ".")
   }
 
   setThemeThenBuild(themeName) {
@@ -86,10 +87,11 @@ export class MainClass {
 class FooterClass {
   constructor(footerId) {
     this.themeName = "dark-footer";
-    this.cssData = "background-color: #1a1a1a; color: #6d6d6d; padding: 5px";
+    this.cssData = "position: absolute; bottom: 0; right: 0; left: 0; padding: 5px; color: #6d6b6b; background-color: #111111; text-align: center; border-top: #727272 solid 1px;";
 
     this.copyrightDate = "2020-2022";
-    this.copyrightHolder = "Alexis Opolka (Centaurus)"
+    this.copyrightHolder = "Alexis Opolka (Centaurus)";
+    this.rightsHeld = "All Rights Reserved";
     this.homePage = "https://centaurus-dj.github.io/new/";
     this.aboutPage = "https://centaurus-dj.github.io/new/about/";
     this.contactPage = "https://centaurus-dj.github.io/new/contact";
@@ -97,6 +99,17 @@ class FooterClass {
 
     this.footerId = footerId;
     this.footerDiv = document.getElementById(this.footerId);
+
+    // We construct the footer ourselves
+    this.constructFooter();
+  }
+
+  constructFooter() {
+    // Legal data
+    legalData = document.createElement('div');
+    legalData.id = "legal-data";
+    legalData.
+    this.footerDiv.appendChild(legalData);
   }
 
   applyTheme(themeData) {
@@ -111,9 +124,12 @@ class FooterClass {
     }
   }
   build() {
-    console.log(this.footerDiv)
     this.footerDiv.classList = "footer";
     this.footerDiv.style = "";
+  }
+  buildCSS() {
+    this.footerDiv.classList = "";
+    this.footerDiv.style = this.cssData;
   }
 }
 

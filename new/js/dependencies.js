@@ -19,17 +19,8 @@ function setPageThemeLight() {
 }
 
 function setPageThemeTest() {
-  themeManager.createTheme('theme-test', 'background-color: #1184b9; color: #ffffff', 'bruh');
   themeManager.setThemeThenCSSBuild('theme-test');
 }
-
-function setFooterCopyright() {
-  var footer = document.getElementById('footer');
-
-  footer.textContent = 'Copyright (c) 2021 Centaurus - All Rights Reserved';
-  console.debug('Footer created')
-}
-
 // registering functions in window storage
 window.setPageThemeDark = setPageThemeDark;
 window.setPageThemeLight = setPageThemeLight;
@@ -37,7 +28,7 @@ window.setPageThemeTest = setPageThemeTest;
 window.themeManager = themeManager;
 
 // Procedural actions
-
+themeManager.createTheme('theme-test', 'background-color: #1184b9; color: #ffffff', 'bruh');
 themeManager.setTheme('dark');
 themeManager.build();
 
