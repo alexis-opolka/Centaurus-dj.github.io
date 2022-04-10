@@ -1,4 +1,7 @@
 {
   "liveServer.settings.CustomBrowser": "firefox",
-  "workbench.colorTheme": "Community Material Theme Ocean"
+  "workbench.colorTheme": "Community Material Theme Ocean",
+  "jshint.options": {
+    "esversion": 6
+  }
 }

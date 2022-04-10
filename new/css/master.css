@@ -30,6 +30,10 @@ footer {
   border-top: #727272 solid 1px;
 }
 
+footer a {
+  color: inherit;
+}
+
 /* User-defined styles of Divs*/
 .header-title {
   font-size: 34px;
@@ -67,6 +71,20 @@ footer {
 }
 .theme-button:active, .theme-button:hover {
   border: 1px #27e0a9;
+}
+
+.footer-wrap {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+  flex-direction: row;
+}
+.footer-subwrap {
+  display: flex;
+  width: 50%;
+  overflow-x: hidden;
+  flex-direction: column;
 }
 
 /* Background Style */
