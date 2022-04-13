@@ -1,6 +1,8 @@
 import {whut, MainClass} from './libs/themeteor/main.js';
 
+// Defining Variables
 var themeManager = new MainClass();
+var workInProgress = true;
 
 // Functions defining section
 
@@ -33,3 +35,11 @@ themeManager.setTheme('dark');
 themeManager.build();
 
 console.log(themeManager.getTheme('dark'));
+if (window.workInProgress === true) {
+  var documentTitle = document.title;
+  
+  document.title = documentTitle + ' | Work still in progress';
+  console.log(`As the document is still a work in progress the title has been changed from [${documentTitle}] to [${document.title}]`);
+
+  
+}
