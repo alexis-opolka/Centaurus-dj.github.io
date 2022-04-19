@@ -5,26 +5,14 @@
     <title aria-live="polite">Centaurus' Website</title>
     <link rel="stylesheet" href="./css/master.css">
     <script src="js\dependencies.js" charset="utf-8" type="module" crossorigin="anonymous"></script>
+    <script>
+      window.workInProgress = true;
+      window.pageTitle = "Centaurus's Website";
+    </script>
   </head>
   <body>
-    <header>
-      <div class="header-title">
-        <a href="./">Centaurus' Website</a>
-      </div>
-
-      <div class="header-tools">
-        <button class="theme-button" id="dark-theme-bt" onclick="setPageThemeDark()">Dark Theme</button>
-        <button class="theme-button" id="light-theme-bt" onclick="setPageThemeLight()">Light Theme</button>
-        <button class="theme-button" id="blue-theme-bt" type="button" name="button" onclick="setPageThemeTest()">Blue Test Theme</button>
-      </div>
-    </header>
-
-    <p>
-      <a href="/old/">Access Old Version</a>
-    </p>
-    <footer id="page-footer" class="footer"></footer>
+    <header id="page-header" aria-live="polite""></header>
+    <main id="page-content"></main>
+    <footer id="page-footer" class="footer" aria-live="polite"></footer>
   </body>
-  <script>
-    window.workInProgress = true;
-  </script>
 </html>
