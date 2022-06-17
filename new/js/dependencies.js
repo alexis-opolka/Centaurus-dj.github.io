@@ -24,8 +24,8 @@ function setPageThemeTest() {
   themeManager.setThemeThenCSSBuild('theme-test');
 }
 
-function CreateThemeManager(pageTitle) {
-  window.themeManager = new MainClass(pageTitle);
+function CreateThemeManager(pageTitle, contentID) {
+  window.themeManager = new MainClass(pageTitle, contentID);
   window.themeManager.createTheme('theme-test', 'background-color: #1184b9; color: #ffffff', 'bruh');
   window.themeManager.setTheme('dark');
   window.themeManager.build();
@@ -45,9 +45,10 @@ if (window.workInProgress === true) {
   document.title = documentTitle + ' | Work still in progress';
   console.log(`As the document is still a work in progress the title has been changed from [${documentTitle}] to [${document.title}]`);
 }
-if(window.pageTitle != null) {
-  console.log('ThemeManager Launched!');
-  CreateThemeManager(window.pageTitle);
+if (window.pageTitle != null) {
+  console.log('ThemeManager Launched! IDs:', window.pageTitle, window.contentID);
+  CreateThemeManager(window.pageTitle, window.contentID);
+  window.themeManager.buildContent();
 } else {
   console.log('ThemeManager Not Launched!');
 }
